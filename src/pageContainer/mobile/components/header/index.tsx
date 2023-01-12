@@ -1,5 +1,5 @@
 import * as S from "./style";
-import { BsFillBellFill } from "react-icons/bs";
+import { AiOutlineBarChart } from "react-icons/ai";
 interface HeaderProps {
   color: string;
   title: string;
@@ -9,7 +9,7 @@ export default function Header({ title, color }: HeaderProps) {
     <S.CateHeader color={color}>
       <span>{title}</span>
       <div>
-        <BsFillBellFill className="icon" />
+        <AiOutlineBarChart className="icon" />
       </div>
     </S.CateHeader>
   );

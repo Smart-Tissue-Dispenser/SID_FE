@@ -1,13 +1,14 @@
+import { RecoilRoot, atom } from "recoil";
 import styled from "styled-components";
 import MobileMainPage from "../pageContainer/mainPage";
-import * as S from "./style";
+export const ModalState = atom({
+  key: "modal",
+  default: "close",
+});
 export default function Home() {
   return (
-    <>
-      <S.Browser>Hello</S.Browser>
-      <S.Mobile>
-        <MobileMainPage />
-      </S.Mobile>
-    </>
+    <RecoilRoot>
+      <MobileMainPage />
+    </RecoilRoot>
   );
 }

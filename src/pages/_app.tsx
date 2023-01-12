@@ -1,15 +1,11 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import MobileFooter from "../pageContainer/mobile/components/footer";
-import { Mobile } from "./style";
-
+import Nav from "../pageContainer/mobile/components/nav";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Nav />
       <Component {...pageProps} />
-      <Mobile>
-        <MobileFooter />
-      </Mobile>
     </>
   );
 }
