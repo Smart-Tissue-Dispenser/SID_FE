@@ -15,8 +15,11 @@ export default function DetailPage() {
             <AiOutlineClose className="icon" onClick={() => setModal(false)} />
           </S.ModalHead>
           <S.Text>
-            {emptyList.map((item) => (
-              <span>{item + " "}</span>
+            {emptyList.map((item, idx) => (
+              <span>
+                {idx !== 0 ? "," : null}
+                {item}
+              </span>
             ))}
             번칸의 휴지가 없습니다!
           </S.Text>

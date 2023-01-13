@@ -13,7 +13,7 @@ export default function MobileMainPage() {
   }, []);
   return (
     <PageLayout
-      title={"Categories"}
+      title={"BSM 티슈 관리 앱"}
       color={"#ff453f"}
       items={items}
       link={"/floor"}

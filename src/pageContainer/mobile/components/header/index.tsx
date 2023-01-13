@@ -8,7 +8,7 @@ export default function Header({ title, color }: HeaderProps) {
   return (
     <S.CateHeader color={color}>
       <span>{title}</span>
-      <div>
+      <div onClick={() => (window.location.href = "/stat")}>
         <AiOutlineBarChart className="icon" />
       </div>
     </S.CateHeader>
